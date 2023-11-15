@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.22" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.22" />
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0-preview-23424-02" />
+      <PackageReference Include="MSTest.TestAdapter" Version="3.1.1" />
+      <PackageReference Include="MSTest.TestFramework" Version="3.1.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj" />
+      <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
+      <ProjectReference Include="..\Repository.Interface\DataAccess.Interface.csproj" />
+      <ProjectReference Include="..\WebApi.Tests\WebApi.Tests.csproj" />
+    </ItemGroup>
+
+</Project>
